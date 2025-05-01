@@ -6,37 +6,62 @@
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
-            renderer="logarithmicDepthBuffer: true;"
             embedded
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
-            <a-assets>
-                <a-asset-item
-                    id="animated-asset"
-                    src="assets/asset.glb"
-                ></a-asset-item>
-            </a-assets>
-
-                <a-entity
+                <a-image
+                    src="assets/asset.png"
                     look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="0.33154712159265465 0.33154712159265465 0.33154712159265465"
-                    gps-entity-place="latitude: 8.5273649; longitude: 76.8896278;"
-                ></a-entity>
-                <a-entity
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.52726183417961; longitude: 76.889631645754;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
                     look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="0.33154712159265465 0.33154712159265465 0.33154712159265465"
-                    gps-entity-place="latitude: 8.5278582; longitude: 76.8899111;"
-                ></a-entity>
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.528142482529441; longitude: 76.88929905183615;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527627887053429; longitude: 76.88893427141012;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527192867656877; longitude: 76.8896155524999;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527336105805558; longitude: 76.88979257829489;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527866616999606; longitude: 76.88964773900807;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527903752755611; longitude: 76.89000715501608;"
+                ></a-image>
+                <a-image
+                    src="assets/asset.png"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 8.527574835934033; longitude: 76.89013053663076;"
+                ></a-image>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
